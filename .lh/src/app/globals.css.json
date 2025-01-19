@@ -1,0 +1,670 @@
+{
+    "sourceFile": "src/app/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 163,
+            "patches": [
+                {
+                    "date": 1737235621109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737235654826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n \n body {\n   color: var(--foreground);\n   background: var(--background);\n-  font-family: Poppins, sans-serif;\n+  font-family: sans-serif;\n }\n"
+                },
+                {
+                    "date": 1737235695514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,11 @@\n \n body {\n   color: var(--foreground);\n   background: var(--background);\n-  font-family: sans-serif;\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  color: #171717;\n }\n"
+                },
+                {
+                    "date": 1737235732408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@tailwind base;\n+@tailwind components;\n+@tailwind utilities;\n+\n+:root {\n+  --background: #ffffff;\n+  --foreground: #171717;\n+}\n+\n+@media (prefers-color-scheme: dark) {\n+  :root {\n+    --background: #0a0a0a;\n+    --foreground: #ededed;\n+  }\n+}\n+\n+body {\n+  color: var(--foreground);\n+  background: var(--background);\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  color: F2F2F2;\n+}\n"
+                },
+                {
+                    "date": 1737237294764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   --background: #ffffff;\n   --foreground: #171717;\n }\n \n-@media (prefers-color-scheme: dark) {\n+@media (prefers-color-scheme: light) {\n   :root {\n     --background: #0a0a0a;\n     --foreground: #ededed;\n   }\n@@ -24,31 +24,4 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n   color: F2F2F2;\n }\n-@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@tailwind base;\n-@tailwind components;\n-@tailwind utilities;\n-\n-:root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n-}\n-\n-@media (prefers-color-scheme: dark) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n-}\n-\n-body {\n-  color: var(--foreground);\n-  background: var(--background);\n-  font-family: Poppins, sans-serif;\n-  font-size: 16px;\n-  line-height: 1.5;\n-  font-weight: 400;\n-  letter-spacing: 0.01em;\n-  color: #171717;\n-}\n"
+                },
+                {
+                    "date": 1737237607170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n-:root {\n+/* :root {\n   --background: #ffffff;\n   --foreground: #171717;\n }\n \n@@ -12,13 +12,11 @@\n   :root {\n     --background: #0a0a0a;\n     --foreground: #ededed;\n   }\n-}\n+} */\n \n body {\n-  color: var(--foreground);\n-  background: var(--background);\n   font-family: Poppins, sans-serif;\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n"
+                },
+                {
+                    "date": 1737237619515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,5 @@\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n   letter-spacing: 0.01em;\n-  color: F2F2F2;\n }\n"
+                },
+                {
+                    "date": 1737238563879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,9 @@\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n   letter-spacing: 0.01em;\n+\n+  .containerLogin {\n+    background-color: #16191B;\n+  }\n }\n"
+                },
+                {
+                    "date": 1737238578861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,7 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    background-color: #16191B;\n+    background-color: red;\n   }\n }\n"
+                },
+                {
+                    "date": 1737238667227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,10 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    background-color: red;\n+    background-color: #16191B;\n+    h1 {\n+      color: #04F000;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737238723864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,9 @@\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n     }\n+    p {\n+      color: #F2F2F2;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737238752656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n+    text-align: center;\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n     }\n"
+                },
+                {
+                    "date": 1737238760595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,10 @@\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n     text-align: center;\n+    justify-content: center;\n+    align-items: center;\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n     }\n"
+                },
+                {
+                    "date": 1737238820914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,8 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    text-align: center;\n-    justify-content: center;\n-    align-items: center;\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n     }\n"
+                },
+                {
+                    "date": 1737239393677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n@@ -25,8 +26,9 @@\n   .containerLogin {\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n+      font-family: 'Aguafina Script', cursive;\n     }\n     p {\n       color: #F2F2F2;\n     }\n"
+                },
+                {
+                    "date": 1737239405308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,10 @@\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n+      font-size: 4rem;\n+      font-weight: 900;\n     }\n     p {\n       color: #F2F2F2;\n     }\n"
+                },
+                {
+                    "date": 1737239411217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,14 @@\n       font-family: 'Aguafina Script', cursive;\n       font-size: 4rem;\n       font-weight: 900;\n     }\n+    h3 {\n+      color: #04F000;\n+      font-family: 'Aguafina Script', cursive;\n+      font-size: 2rem;\n+      font-weight: 900;\n+    }\n     p {\n       color: #F2F2F2;\n     }\n   }\n"
+                },
+                {
+                    "date": 1737239430302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n       font-size: 4rem;\n       font-weight: 900;\n     }\n     h3 {\n-      color: #04F000;\n+      color: #F2F2F2;\n       font-family: 'Aguafina Script', cursive;\n       font-size: 2rem;\n       font-weight: 900;\n     }\n"
+                },
+                {
+                    "date": 1737239442157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n       font-weight: 900;\n     }\n     h3 {\n       color: #F2F2F2;\n-      font-family: 'Aguafina Script', cursive;\n+      font-family: 'Poppins', sans-serif;\n       font-size: 2rem;\n       font-weight: 900;\n     }\n     p {\n"
+                },
+                {
+                    "date": 1737239454873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     h3 {\n       color: #F2F2F2;\n       font-family: 'Poppins', sans-serif;\n       font-size: 2rem;\n-      font-weight: 900;\n+      font-weight: 300;\n     }\n     p {\n       color: #F2F2F2;\n     }\n"
+                },
+                {
+                    "date": 1737239475046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n       font-size: 4rem;\n-      font-weight: 900;\n+      font-weight: 700;\n     }\n     h3 {\n       color: #F2F2F2;\n       font-family: 'Poppins', sans-serif;\n"
+                },
+                {
+                    "date": 1737239482570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n       font-size: 4rem;\n-      font-weight: 700;\n+      font-weight: 400;\n     }\n     h3 {\n       color: #F2F2F2;\n       font-family: 'Poppins', sans-serif;\n"
+                },
+                {
+                    "date": 1737241829184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@tailwind base;\n+/* @tailwind base;\n @tailwind components;\n-@tailwind utilities;\n+@tailwind utilities; */\n \n /* :root {\n   --background: #ffffff;\n   --foreground: #171717;\n"
+                },
+                {
+                    "date": 1737242036584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   .containerLogin {\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n-      font-family: 'Aguafina Script', cursive;\n+      /* font-family: 'Aguafina Script', cursive; */\n       font-size: 4rem;\n       font-weight: 400;\n     }\n     h3 {\n"
+                },
+                {
+                    "date": 1737242203440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   .containerLogin {\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n-      /* font-family: 'Aguafina Script', cursive; */\n+      font-family: 'Aguafina Script', cursive;\n       font-size: 4rem;\n       font-weight: 400;\n     }\n     h3 {\n"
+                },
+                {
+                    "date": 1737243281220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,10 @@\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n   letter-spacing: 0.01em;\n+  height: 100vh;\n+  width: 100vw;\n \n   .containerLogin {\n     background-color: #16191B;\n     h1 {\n"
+                },
+                {
+                    "date": 1737243291418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,8 @@\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n   letter-spacing: 0.01em;\n-  height: 100vh;\n-  width: 100vw;\n \n   .containerLogin {\n     background-color: #16191B;\n     h1 {\n"
+                },
+                {
+                    "date": 1737243369926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n+    max-width: 600px;\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243391802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    max-width: 600px;\n+    max-width: calc(100vw - 200px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243400279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    max-width: calc(100vw - 200px);\n+    max-width: calc(100vw - 600px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243406484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    max-width: calc(100vw - 600px);\n+    max-width: calc(100vw - 200px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243413855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    max-width: calc(100vw - 200px);\n+    max-width: calc(100vw - 800px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243430854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   font-weight: 400;\n   letter-spacing: 0.01em;\n \n   .containerLogin {\n-    max-width: calc(100vw - 800px);\n+    max-width: calc(100vw - 1000px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243477259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,11 @@\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n   letter-spacing: 0.01em;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n     background-color: #16191B;\n"
+                },
+                {
+                    "date": 1737243509445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n   }\n } */\n \n body {\n+  padding: 0;\n+  margin: 0;\n   font-family: Poppins, sans-serif;\n   font-size: 16px;\n   line-height: 1.5;\n   font-weight: 400;\n"
+                },
+                {
+                    "date": 1737243914733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n+    max-height: calc(100vh - 1000px);\n     background-color: #16191B;\n     h1 {\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737243932919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,51 @@\n+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+/* @tailwind base;\n+@tailwind components;\n+@tailwind utilities; */\n+\n+/* :root {\n+  --background: #ffffff;\n+  --foreground: #171717;\n+}\n+\n+@media (prefers-color-scheme: light) {\n+  :root {\n+    --background: #0a0a0a;\n+    --foreground: #ededed;\n+  }\n+} */\n+\n+body {\n+  padding: 0;\n+  margin: 0;\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+\n+  .containerLogin {\n+    max-width: calc(100vw - 1000px);\n+    min-height: 100vh;\n+    background-color: #16191B;\n+    h1 {\n+      color: #04F000;\n+      font-family: 'Aguafina Script', cursive;\n+      font-size: 4rem;\n+      font-weight: 400;\n+    }\n+    h3 {\n+      color: #F2F2F2;\n+      font-family: 'Poppins', sans-serif;\n+      font-size: 2rem;\n+      font-weight: 300;\n+    }\n+    p {\n+      color: #F2F2F2;\n+    }\n+  }\n+}\n"
+                },
+                {
+                    "date": 1737244025782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     max-width: calc(100vw - 1000px);\n     min-height: 100vh;\n     background-color: #16191B;\n     h1 {\n+      margin: 0;\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n       font-size: 4rem;\n       font-weight: 400;\n@@ -48,55 +49,4 @@\n       color: #F2F2F2;\n     }\n   }\n }\n-@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-/* @tailwind base;\n-@tailwind components;\n-@tailwind utilities; */\n-\n-/* :root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n-}\n-\n-@media (prefers-color-scheme: light) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n-} */\n-\n-body {\n-  padding: 0;\n-  margin: 0;\n-  font-family: Poppins, sans-serif;\n-  font-size: 16px;\n-  line-height: 1.5;\n-  font-weight: 400;\n-  letter-spacing: 0.01em;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-\n-  .containerLogin {\n-    max-width: calc(100vw - 1000px);\n-    max-height: calc(100vh - 1000px);\n-    background-color: #16191B;\n-    h1 {\n-      color: #04F000;\n-      font-family: 'Aguafina Script', cursive;\n-      font-size: 4rem;\n-      font-weight: 400;\n-    }\n-    h3 {\n-      color: #F2F2F2;\n-      font-family: 'Poppins', sans-serif;\n-      font-size: 2rem;\n-      font-weight: 300;\n-    }\n-    p {\n-      color: #F2F2F2;\n-    }\n-  }\n-}\n"
+                },
+                {
+                    "date": 1737244085036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,12 @@\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n     min-height: 100vh;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n     background-color: #16191B;\n     h1 {\n       margin: 0;\n       color: #04F000;\n"
+                },
+                {
+                    "date": 1737244094860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     max-width: calc(100vw - 1000px);\n     min-height: 100vh;\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n+    justify-content: space-between;\n     align-items: center;\n     background-color: #16191B;\n     h1 {\n       margin: 0;\n"
+                },
+                {
+                    "date": 1737244104675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,57 @@\n+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+/* @tailwind base;\n+@tailwind components;\n+@tailwind utilities; */\n+\n+/* :root {\n+  --background: #ffffff;\n+  --foreground: #171717;\n+}\n+\n+@media (prefers-color-scheme: light) {\n+  :root {\n+    --background: #0a0a0a;\n+    --foreground: #ededed;\n+  }\n+} */\n+\n+body {\n+  padding: 0;\n+  margin: 0;\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+\n+  .containerLogin {\n+    max-width: calc(100vw - 1000px);\n+    min-height: 100vh;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: space-between;\n+    padding: 20px;\n+    align-items: center;\n+    background-color: #16191B;\n+    h1 {\n+      margin: 0;\n+      color: #04F000;\n+      font-family: 'Aguafina Script', cursive;\n+      font-size: 4rem;\n+      font-weight: 400;\n+    }\n+    h3 {\n+      color: #F2F2F2;\n+      font-family: 'Poppins', sans-serif;\n+      font-size: 2rem;\n+      font-weight: 300;\n+    }\n+    p {\n+      color: #F2F2F2;\n+    }\n+  }\n+}\n"
+                },
+                {
+                    "date": 1737244119252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-height: 100vh;\n+    min-height: calc(100vh - 1000px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     padding: 20px;\n@@ -54,60 +54,4 @@\n       color: #F2F2F2;\n     }\n   }\n }\n-@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-/* @tailwind base;\n-@tailwind components;\n-@tailwind utilities; */\n-\n-/* :root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n-}\n-\n-@media (prefers-color-scheme: light) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n-} */\n-\n-body {\n-  padding: 0;\n-  margin: 0;\n-  font-family: Poppins, sans-serif;\n-  font-size: 16px;\n-  line-height: 1.5;\n-  font-weight: 400;\n-  letter-spacing: 0.01em;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-\n-  .containerLogin {\n-    max-width: calc(100vw - 1000px);\n-    min-height: 100vh;\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: space-between;\n-    align-items: center;\n-    background-color: #16191B;\n-    h1 {\n-      margin: 0;\n-      color: #04F000;\n-      font-family: 'Aguafina Script', cursive;\n-      font-size: 4rem;\n-      font-weight: 400;\n-    }\n-    h3 {\n-      color: #F2F2F2;\n-      font-family: 'Poppins', sans-serif;\n-      font-size: 2rem;\n-      font-weight: 300;\n-    }\n-    p {\n-      color: #F2F2F2;\n-    }\n-  }\n-}\n"
+                },
+                {
+                    "date": 1737244143158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-height: calc(100vh - 1000px);\n+    min-height: fit-content;\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1737244149973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-height: fit-content;\n+    min-height: 100%;\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1737244155756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-height: 100%;\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1737244180459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n   align-items: center;\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n+    min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n     padding: 20px;\n"
+                },
+                {
+                    "date": 1737244307800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,15 @@\n     justify-content: space-between;\n     padding: 20px;\n     align-items: center;\n     background-color: #16191B;\n+\n+    .divTitle {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+    }\n     h1 {\n       margin: 0;\n       color: #04F000;\n       font-family: 'Aguafina Script', cursive;\n"
+                },
+                {
+                    "date": 1737244333433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     align-items: center;\n     background-color: #16191B;\n \n     .divTitle {\n+      margin-top: 20px;\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n"
+                },
+                {
+                    "date": 1737244362718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,27 +38,28 @@\n     align-items: center;\n     background-color: #16191B;\n \n     .divTitle {\n-      margin-top: 20px;\n+      margin-top: 40px;\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n+      \n+      h1 {\n+        margin: 0;\n+        color: #04F000;\n+        font-family: 'Aguafina Script', cursive;\n+        font-size: 4rem;\n+        font-weight: 400;\n+      }\n+      h3 {\n+        color: #F2F2F2;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 2rem;\n+        font-weight: 300;\n+      }\n     }\n-    h1 {\n-      margin: 0;\n-      color: #04F000;\n-      font-family: 'Aguafina Script', cursive;\n-      font-size: 4rem;\n-      font-weight: 400;\n-    }\n-    h3 {\n-      color: #F2F2F2;\n-      font-family: 'Poppins', sans-serif;\n-      font-size: 2rem;\n-      font-weight: 300;\n-    }\n     p {\n       color: #F2F2F2;\n     }\n   }\n"
+                },
+                {
+                    "date": 1737244372238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,17 +43,18 @@\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n-      \n+\n       h1 {\n         margin: 0;\n         color: #04F000;\n         font-family: 'Aguafina Script', cursive;\n         font-size: 4rem;\n         font-weight: 400;\n       }\n       h3 {\n+        margin: 0;\n         color: #F2F2F2;\n         font-family: 'Poppins', sans-serif;\n         font-size: 2rem;\n         font-weight: 300;\n"
+                },
+                {
+                    "date": 1737245314134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,14 @@\n   display: flex;\n   justify-content: center;\n   align-items: center;\n \n+  .iconPageLeft {\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n+  }\n+\n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n     min-height: calc(100vh - 40px);\n     display: flex;\n"
+                },
+                {
+                    "date": 1737245323162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,10 @@\n   .iconPageLeft {\n     position: absolute;\n     left: 0;\n     top: 0;\n+    width: 100px;\n+    height: 100px;\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737245346155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,19 @@\n \n   .iconPageLeft {\n     position: absolute;\n     left: 0;\n-    top: 0;\n+    bottom: 0;\n     width: 100px;\n     height: 100px;\n   }\n+  .iconPageRight {\n+    position: absolute;\n+    right: 0;\n+    bottom: 0;\n+    width: 100px;\n+    height: 100px;\n+  }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n     min-height: calc(100vh - 40px);\n"
+                },
+                {
+                    "date": 1737245382669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,17 +31,17 @@\n   .iconPageLeft {\n     position: absolute;\n     left: 0;\n     bottom: 0;\n-    width: 100px;\n-    height: 100px;\n+    width: 400px;\n+    height: 400px;\n   }\n   .iconPageRight {\n     position: absolute;\n     right: 0;\n     bottom: 0;\n-    width: 100px;\n-    height: 100px;\n+    width: 400px;\n+    height: 400px;\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737245915647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,6 +77,11 @@\n     }\n     p {\n       color: #F2F2F2;\n     }\n+    .assignDeveloper {\n+      color: #F2F2F2;\n+      font-size: 1rem;\n+      font-weight: 300;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737245930824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n       color: #F2F2F2;\n     }\n     .assignDeveloper {\n       color: #F2F2F2;\n-      font-size: 1rem;\n+      font-size: 20px;\n       font-weight: 300;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737245952270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,11 +77,17 @@\n     }\n     p {\n       color: #F2F2F2;\n     }\n+    footer {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+    }\n     .assignDeveloper {\n       color: #F2F2F2;\n-      font-size: 20px;\n+      font-size: 10px;\n       font-weight: 300;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737245962219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,12 +82,13 @@\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n+      \n+      .assignDeveloper {\n+        color: #F2F2F2;\n+        font-size: 10px;\n+        font-weight: 300;\n+      }\n     }\n-    .assignDeveloper {\n-      color: #F2F2F2;\n-      font-size: 10px;\n-      font-weight: 300;\n-    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737245972863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,10 +82,11 @@\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n-      \n+\n       .assignDeveloper {\n+        margin: 0%;\n         color: #F2F2F2;\n         font-size: 10px;\n         font-weight: 300;\n       }\n"
+                },
+                {
+                    "date": 1737246062753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n+    min-width: 1000px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n"
+                },
+                {
+                    "date": 1737246072512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-width: 1000px;\n+    min-width: 800px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n"
+                },
+                {
+                    "date": 1737246127473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-width: 800px;\n+    min-width: 400px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n"
+                },
+                {
+                    "date": 1737246174641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,17 +31,17 @@\n   .iconPageLeft {\n     position: absolute;\n     left: 0;\n     bottom: 0;\n-    width: 400px;\n-    height: 400px;\n+    max-width: 400px;\n+    max-height: 400px;\n   }\n   .iconPageRight {\n     position: absolute;\n     right: 0;\n     bottom: 0;\n-    width: 400px;\n-    height: 400px;\n+    max-width: 400px;\n+    max-height: 400px;\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737246230094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n-    min-width: 400px;\n+    min-width: 450px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n"
+                },
+                {
+                    "date": 1737246247899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,13 @@\n     left: 0;\n     bottom: 0;\n     max-width: 400px;\n     max-height: 400px;\n+\n+    @media (max-width: 768px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n   }\n   .iconPageRight {\n     position: absolute;\n     right: 0;\n"
+                },
+                {
+                    "date": 1737246271855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     bottom: 0;\n     max-width: 400px;\n     max-height: 400px;\n \n-    @media (max-width: 768px) {\n+    @media (max-width: 1263px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n   }\n"
+                },
+                {
+                    "date": 1737246290591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n     max-width: 400px;\n     max-height: 400px;\n \n     @media (max-width: 1263px) {\n-      max-width: 200px;\n-      max-height: 200px;\n+      max-width: 300px;\n+      max-height: 300px;\n     }\n   }\n   .iconPageRight {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1737246300483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,13 @@\n     right: 0;\n     bottom: 0;\n     max-width: 400px;\n     max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737246374159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,12 @@\n     @media (max-width: 1263px) {\n       max-width: 300px;\n       max-height: 300px;\n     }\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n   }\n   .iconPageRight {\n     position: absolute;\n     right: 0;\n@@ -50,8 +54,13 @@\n     @media (max-width: 1263px) {\n       max-width: 300px;\n       max-height: 300px;\n     }\n+\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737246423816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,11 @@\n     @media (max-width: 1080px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n   }\n   .iconPageRight {\n     position: absolute;\n     right: 0;\n@@ -59,8 +62,11 @@\n     @media (max-width: 1080px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n   }\n \n   .containerLogin {\n     max-width: calc(100vw - 1000px);\n"
+                },
+                {
+                    "date": 1737246452903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,6 +116,10 @@\n         font-size: 10px;\n         font-weight: 300;\n       }\n     }\n+\n+    @media (max-width: 900px) {\n+      width: 100%;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246464336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,7 +119,8 @@\n     }\n \n     @media (max-width: 900px) {\n       width: 100%;\n+      height: 100%;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246482655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n       }\n     }\n \n     @media (max-width: 900px) {\n-      width: 100%;\n+      max-width: 100%;\n       height: 100%;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246492756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n       }\n     }\n \n     @media (max-width: 900px) {\n-      max-width: 100%;\n+      max-width: 100vw;\n       height: 100%;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246509846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,8 @@\n       }\n     }\n \n     @media (max-width: 900px) {\n-      max-width: 100vw;\n-      height: 100%;\n+      width: 100vw;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246557504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,8 +118,13 @@\n       }\n     }\n \n     @media (max-width: 900px) {\n-      width: 100vw;\n+      max-width: 100vw;\n     }\n   }\n+  @media (max-width: 450px) {\n+    .containerLogin {\n+      min-width: 100vw;\n+    }\n+  }\n }\n"
+                },
+                {
+                    "date": 1737246577547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,10 +121,8 @@\n     @media (max-width: 900px) {\n       max-width: 100vw;\n     }\n   }\n-  @media (max-width: 450px) {\n-    .containerLogin {\n-      min-width: 100vw;\n-    }\n+  @media (max-width: 900px) {\n+    margin: 0;\n   }\n }\n"
+                },
+                {
+                    "date": 1737246688002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,8 +121,5 @@\n     @media (max-width: 900px) {\n       max-width: 100vw;\n     }\n   }\n-  @media (max-width: 900px) {\n-    margin: 0;\n-  }\n }\n"
+                },
+                {
+                    "date": 1737246698545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,10 +116,6 @@\n         font-size: 10px;\n         font-weight: 300;\n       }\n     }\n-\n-    @media (max-width: 900px) {\n-      max-width: 100vw;\n-    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737246727721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,6 +116,10 @@\n         font-size: 10px;\n         font-weight: 300;\n       }\n     }\n+\n+    @media (max-width: 900px) {\n+      max-width: 100vw;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250351496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,6 +120,12 @@\n \n     @media (max-width: 900px) {\n       max-width: 100vw;\n     }\n+    .centerCard {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+    }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250361279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,7 +125,8 @@\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n+      gap: 10px;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250373077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,7 +126,8 @@\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n       gap: 10px;\n+      width: 100%;\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250383468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,15 @@\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n       gap: 10px;\n-      width: 100%;\n+\n+      input {\n+        width: 100%;\n+        height: 40px;\n+        border: 1px solid #F2F2F2;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250390972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,7 +134,12 @@\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n       }\n+      label {\n+        color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250396620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,7 +139,14 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n       }\n+      button {\n+        width: 100%;\n+        height: 40px;\n+        border: 1px solid #F2F2F2;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250403030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,7 +146,11 @@\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n       }\n+      button:hover {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250423790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,7 +150,11 @@\n       button:hover {\n         background-color: #F2F2F2;\n         color: #16191B;\n       }\n+      button:active {\n+        background-color: #04F000;\n+        color: #16191B;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250432545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,7 +154,11 @@\n       button:active {\n         background-color: #04F000;\n         color: #16191B;\n       }\n+      button:disabled {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250450264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,16 +149,19 @@\n       }\n       button:hover {\n         background-color: #F2F2F2;\n         color: #16191B;\n+        cursor: pointer;\n       }\n       button:active {\n         background-color: #04F000;\n         color: #16191B;\n+        cursor: pointer;\n       }\n       button:disabled {\n         background-color: #F2F2F2;\n         color: #16191B;\n+        cursor: not-allowed;\n       }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250466716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,7 +161,10 @@\n         background-color: #F2F2F2;\n         color: #16191B;\n         cursor: not-allowed;\n       }\n+      button:focus {\n+        outline: none;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250479640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,7 +164,10 @@\n       }\n       button:focus {\n         outline: none;\n       }\n+      button:focus-visible {\n+        outline: 1px solid #F2F2F2;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250494285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,19 +155,22 @@\n       button:active {\n         background-color: #04F000;\n         color: #16191B;\n         cursor: pointer;\n+        opacity: 0.5;\n       }\n       button:disabled {\n         background-color: #F2F2F2;\n         color: #16191B;\n         cursor: not-allowed;\n+        opacity: 0.5;\n       }\n       button:focus {\n         outline: none;\n       }\n       button:focus-visible {\n         outline: 1px solid #F2F2F2;\n       }\n+\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737250505657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,8 +133,10 @@\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n+        background-color: #16191B;\n+        color: #F2F2F2;\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250519757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,10 @@\n         border-radius: 5px;\n         padding: 0 10px;\n         background-color: #16191B;\n         color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250546353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,9 @@\n         background-color: #16191B;\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n+        outline: none;\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250554420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n+        transition: all 0.3s ease;\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250562201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,11 @@\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n         transition: all 0.3s ease;\n+        &:focus {\n+          border-color: #04F000;\n+        }\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250578063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,8 +142,13 @@\n         transition: all 0.3s ease;\n         &:focus {\n           border-color: #04F000;\n         }\n+        &::placeholder {\n+          color: #F2F2F2;\n+          font-size: 16px;\n+          font-weight: 300;\n+        }\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250589196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,14 @@\n           color: #F2F2F2;\n           font-size: 16px;\n           font-weight: 300;\n         }\n+        &:hover {\n+          border-color: #04F000;\n+        }\n+        &:active {\n+          border-color: #04F000;\n+        }\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250615146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,14 +147,11 @@\n           color: #F2F2F2;\n           font-size: 16px;\n           font-weight: 300;\n         }\n-        &:hover {\n+        &:focus {\n           border-color: #04F000;\n         }\n-        &:active {\n-          border-color: #04F000;\n-        }\n       }\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250628452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,11 +139,8 @@\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n         transition: all 0.3s ease;\n-        &:focus {\n-          border-color: #04F000;\n-        }\n         &::placeholder {\n           color: #F2F2F2;\n           font-size: 16px;\n           font-weight: 300;\n"
+                },
+                {
+                    "date": 1737250772242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,9 @@\n       flex-direction: column;\n       align-items: center;\n       justify-content: center;\n       gap: 10px;\n+      width: -webkit-fill-available;\n \n       input {\n         width: 100%;\n         height: 40px;\n"
+                },
+                {
+                    "date": 1737250785829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,8 +153,9 @@\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n+        margin-bottom: 5px;\n       }\n       button {\n         width: 100%;\n         height: 40px;\n"
+                },
+                {
+                    "date": 1737250797889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,8 +154,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         margin-bottom: 5px;\n+        display: flex;\n       }\n       button {\n         width: 100%;\n         height: 40px;\n"
+                },
+                {
+                    "date": 1737250920620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,9 @@\n       gap: 10px;\n       width: -webkit-fill-available;\n \n       input {\n-        width: 100%;\n+        width: 80%;\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n@@ -155,8 +155,10 @@\n         font-size: 16px;\n         font-weight: 300;\n         margin-bottom: 5px;\n         display: flex;\n+        justify-content: flex-start;\n+        width: 100%;\n       }\n       button {\n         width: 100%;\n         height: 40px;\n"
+                },
+                {
+                    "date": 1737250933156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         font-weight: 300;\n         margin-bottom: 5px;\n         display: flex;\n         justify-content: flex-start;\n-        width: 100%;\n+        width: 80%;\n       }\n       button {\n         width: 100%;\n         height: 40px;\n"
+                },
+                {
+                    "date": 1737250964427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n+        margin-bottom: 5px;\n         transition: all 0.3s ease;\n         &::placeholder {\n           color: #F2F2F2;\n           font-size: 16px;\n@@ -159,9 +160,9 @@\n         justify-content: flex-start;\n         width: 80%;\n       }\n       button {\n-        width: 100%;\n+        width: 80%;\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n"
+                },
+                {
+                    "date": 1737250969727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n-        margin-bottom: 5px;\n+        margin-bottom: 15px;\n         transition: all 0.3s ease;\n         &::placeholder {\n           color: #F2F2F2;\n           font-size: 16px;\n"
+                },
+                {
+                    "date": 1737250982727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n-        margin-bottom: 15px;\n+        margin-bottom: 25px;\n         transition: all 0.3s ease;\n         &::placeholder {\n           color: #F2F2F2;\n           font-size: 16px;\n@@ -154,9 +154,8 @@\n       label {\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n-        margin-bottom: 5px;\n         display: flex;\n         justify-content: flex-start;\n         width: 80%;\n       }\n"
+                },
+                {
+                    "date": 1737250999607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n         color: #F2F2F2;\n         font-size: 16px;\n         font-weight: 300;\n         outline: none;\n-        margin-bottom: 25px;\n+        margin-bottom: 35px;\n         transition: all 0.3s ease;\n         &::placeholder {\n           color: #F2F2F2;\n           font-size: 16px;\n"
+                },
+                {
+                    "date": 1737251024123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,8 +164,14 @@\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+        font-size: 16px;\n+        font-weight: 300;\n+        outline: none;\n+        transition: all 0.3s ease;\n       }\n       button:hover {\n         background-color: #F2F2F2;\n         color: #16191B;\n"
+                },
+                {
+                    "date": 1737251031533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n         padding: 0 10px;\n         background-color: #F2F2F2;\n         color: #16191B;\n         font-size: 16px;\n-        font-weight: 300;\n+        font-weight: 400;\n         outline: none;\n         transition: all 0.3s ease;\n       }\n       button:hover {\n"
+                },
+                {
+                    "date": 1737251045083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n         padding: 0 10px;\n         background-color: #F2F2F2;\n         color: #16191B;\n         font-size: 16px;\n-        font-weight: 400;\n+        font-weight: 800;\n         outline: none;\n         transition: all 0.3s ease;\n       }\n       button:hover {\n"
+                },
+                {
+                    "date": 1737251069782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n-        background-color: #F2F2F2;\n+        background-color: 012B00;\n         color: #16191B;\n         font-size: 16px;\n         font-weight: 800;\n         outline: none;\n"
+                },
+                {
+                    "date": 1737251081379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         height: 40px;\n         border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n-        background-color: 012B00;\n+        background-color: #012B00;\n         color: #16191B;\n         font-size: 16px;\n         font-weight: 800;\n         outline: none;\n"
+                },
+                {
+                    "date": 1737251150096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,13 +161,12 @@\n       }\n       button {\n         width: 80%;\n         height: 40px;\n-        border: 1px solid #F2F2F2;\n         border-radius: 5px;\n         padding: 0 10px;\n         background-color: #012B00;\n-        color: #16191B;\n+        color: #FFFFFF;\n         font-size: 16px;\n         font-weight: 800;\n         outline: none;\n         transition: all 0.3s ease;\n"
+                },
+                {
+                    "date": 1737251157578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,8 +165,9 @@\n         border-radius: 5px;\n         padding: 0 10px;\n         background-color: #012B00;\n         color: #FFFFFF;\n+        font-family: 'Poppins', sans-serif;\n         font-size: 16px;\n         font-weight: 800;\n         outline: none;\n         transition: all 0.3s ease;\n"
+                },
+                {
+                    "date": 1737251168700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n         background-color: #012B00;\n         color: #FFFFFF;\n         font-family: 'Poppins', sans-serif;\n         font-size: 16px;\n-        font-weight: 800;\n+        font-weight: 600;\n         outline: none;\n         transition: all 0.3s ease;\n       }\n       button:hover {\n"
+                },
+                {
+                    "date": 1737251335945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     }\n   }\n \n   .containerLogin {\n-    max-width: calc(100vw - 1000px);\n+    max-width: calc(100vw - 1500px);\n     min-width: 450px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1737251351441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     }\n   }\n \n   .containerLogin {\n-    max-width: calc(100vw - 1500px);\n+    max-width: calc(100vw - 2500px);\n     min-width: 450px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1737251360979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     }\n   }\n \n   .containerLogin {\n-    max-width: calc(100vw - 2500px);\n+    max-width: calc(100vw - 1000px);\n     min-width: 450px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1737251412979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,8 @@\n     }\n   }\n \n   .containerLogin {\n-    max-width: calc(100vw - 1000px);\n     min-width: 450px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1737251555439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     }\n   }\n \n   .containerLogin {\n-    min-width: 450px;\n+    min-width: 650px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n     flex-direction: column;\n     justify-content: space-between;\n@@ -193,8 +193,13 @@\n       }\n       button:focus-visible {\n         outline: 1px solid #F2F2F2;\n       }\n+      .registerLink {\n+        color: #04F000;\n+        text-decoration: none;\n+        font-weight: 600;\n+      }\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737251760750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,11 +195,15 @@\n         outline: 1px solid #F2F2F2;\n       }\n       .registerLink {\n         color: #04F000;\n-        text-decoration: none;\n         font-weight: 600;\n       }\n+      .forgotPassword {\n+        margin-top: 10px;\n+        font-size: 12px;\n+        font-weight: 300;\n+      }\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737251768161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,8 +202,12 @@\n         margin-top: 10px;\n         font-size: 12px;\n         font-weight: 300;\n       }\n+      .registerLink:hover {\n+        color: #04F000;\n+        text-decoration: underline;\n+      }\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737251867190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,212 @@\n+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+/* @tailwind base;\n+@tailwind components;\n+@tailwind utilities; */\n+\n+/* :root {\n+  --background: #ffffff;\n+  --foreground: #171717;\n+}\n+\n+@media (prefers-color-scheme: light) {\n+  :root {\n+    --background: #0a0a0a;\n+    --foreground: #ededed;\n+  }\n+} */\n+\n+body {\n+  padding: 0;\n+  margin: 0;\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+\n+  .iconPageLeft {\n+    position: absolute;\n+    left: 0;\n+    bottom: 0;\n+    max-width: 400px;\n+    max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n+  }\n+  .iconPageRight {\n+    position: absolute;\n+    right: 0;\n+    bottom: 0;\n+    max-width: 400px;\n+    max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n+\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n+  }\n+\n+  .containerLogin {\n+    min-width: 650px;\n+    min-height: calc(100vh - 40px);\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: space-between;\n+    padding: 20px;\n+    align-items: center;\n+    background-color: #16191B;\n+\n+    .divTitle {\n+      margin-top: 40px;\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+\n+      h1 {\n+        margin: 0;\n+        color: #04F000;\n+        font-family: 'Aguafina Script', cursive;\n+        font-size: 4rem;\n+        font-weight: 400;\n+      }\n+      h3 {\n+        margin: 0;\n+        color: #F2F2F2;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 2rem;\n+        font-weight: 300;\n+      }\n+    }\n+    p {\n+      color: #F2F2F2;\n+    }\n+    footer {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+\n+      .assignDeveloper {\n+        margin: 0%;\n+        color: #F2F2F2;\n+        font-size: 10px;\n+        font-weight: 300;\n+      }\n+    }\n+\n+    @media (max-width: 900px) {\n+      max-width: 100vw;\n+    }\n+    .centerCard {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+      gap: 10px;\n+      width: -webkit-fill-available;\n+\n+      input {\n+        width: 80%;\n+        height: 40px;\n+        border: 1px solid #F2F2F2;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+        background-color: #16191B;\n+        color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n+        outline: none;\n+        margin-bottom: 35px;\n+        transition: all 0.3s ease;\n+        &::placeholder {\n+          color: #F2F2F2;\n+          font-size: 16px;\n+          font-weight: 300;\n+        }\n+        &:focus {\n+          border-color: #04F000;\n+        }\n+      }\n+      label {\n+        color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n+        display: flex;\n+        justify-content: flex-start;\n+        width: 80%;\n+      }\n+      button {\n+        width: 80%;\n+        height: 40px;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+        background-color: #012B00;\n+        color: #FFFFFF;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 16px;\n+        font-weight: 600;\n+        outline: none;\n+        transition: all 0.3s ease;\n+      }\n+      button:hover {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+        cursor: pointer;\n+      }\n+      button:active {\n+        background-color: #04F000;\n+        color: #16191B;\n+        cursor: pointer;\n+        opacity: 0.5;\n+      }\n+      button:disabled {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+        cursor: not-allowed;\n+        opacity: 0.5;\n+      }\n+      button:focus {\n+        outline: none;\n+      }\n+      button:focus-visible {\n+        outline: 1px solid #F2F2F2;\n+      }\n+      .registerLink {\n+        color: #04F000;\n+        font-weight: 600;\n+      }\n+      .forgotPassword {\n+        margin-top: 10px;\n+        font-size: 12px;\n+        font-weight: 300;\n+      }\n+      .registerLink:hover {\n+        color: #04F000;\n+      }\n+\n+    }\n+  }\n+}\n"
+                },
+                {
+                    "date": 1737251877205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,229 +197,13 @@\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n       }\n-      .forgotPassword {\n+      /* .forgotPassword {\n         margin-top: 10px;\n         font-size: 12px;\n         font-weight: 300;\n-      }\n-      .registerLink:hover {\n-        color: #04F000;\n-      }\n+      } */\n \n     }\n   }\n }\n-@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-/* @tailwind base;\n-@tailwind components;\n-@tailwind utilities; */\n-\n-/* :root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n-}\n-\n-@media (prefers-color-scheme: light) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n-} */\n-\n-body {\n-  padding: 0;\n-  margin: 0;\n-  font-family: Poppins, sans-serif;\n-  font-size: 16px;\n-  line-height: 1.5;\n-  font-weight: 400;\n-  letter-spacing: 0.01em;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-\n-  .iconPageLeft {\n-    position: absolute;\n-    left: 0;\n-    bottom: 0;\n-    max-width: 400px;\n-    max-height: 400px;\n-\n-    @media (max-width: 1263px) {\n-      max-width: 300px;\n-      max-height: 300px;\n-    }\n-    @media (max-width: 1080px) {\n-      max-width: 200px;\n-      max-height: 200px;\n-    }\n-    @media (max-width: 900px) {\n-      display: none;\n-    }\n-  }\n-  .iconPageRight {\n-    position: absolute;\n-    right: 0;\n-    bottom: 0;\n-    max-width: 400px;\n-    max-height: 400px;\n-\n-    @media (max-width: 1263px) {\n-      max-width: 300px;\n-      max-height: 300px;\n-    }\n-\n-    @media (max-width: 1080px) {\n-      max-width: 200px;\n-      max-height: 200px;\n-    }\n-    @media (max-width: 900px) {\n-      display: none;\n-    }\n-  }\n-\n-  .containerLogin {\n-    min-width: 650px;\n-    min-height: calc(100vh - 40px);\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: space-between;\n-    padding: 20px;\n-    align-items: center;\n-    background-color: #16191B;\n-\n-    .divTitle {\n-      margin-top: 40px;\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-\n-      h1 {\n-        margin: 0;\n-        color: #04F000;\n-        font-family: 'Aguafina Script', cursive;\n-        font-size: 4rem;\n-        font-weight: 400;\n-      }\n-      h3 {\n-        margin: 0;\n-        color: #F2F2F2;\n-        font-family: 'Poppins', sans-serif;\n-        font-size: 2rem;\n-        font-weight: 300;\n-      }\n-    }\n-    p {\n-      color: #F2F2F2;\n-    }\n-    footer {\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-\n-      .assignDeveloper {\n-        margin: 0%;\n-        color: #F2F2F2;\n-        font-size: 10px;\n-        font-weight: 300;\n-      }\n-    }\n-\n-    @media (max-width: 900px) {\n-      max-width: 100vw;\n-    }\n-    .centerCard {\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-      gap: 10px;\n-      width: -webkit-fill-available;\n-\n-      input {\n-        width: 80%;\n-        height: 40px;\n-        border: 1px solid #F2F2F2;\n-        border-radius: 5px;\n-        padding: 0 10px;\n-        background-color: #16191B;\n-        color: #F2F2F2;\n-        font-size: 16px;\n-        font-weight: 300;\n-        outline: none;\n-        margin-bottom: 35px;\n-        transition: all 0.3s ease;\n-        &::placeholder {\n-          color: #F2F2F2;\n-          font-size: 16px;\n-          font-weight: 300;\n-        }\n-        &:focus {\n-          border-color: #04F000;\n-        }\n-      }\n-      label {\n-        color: #F2F2F2;\n-        font-size: 16px;\n-        font-weight: 300;\n-        display: flex;\n-        justify-content: flex-start;\n-        width: 80%;\n-      }\n-      button {\n-        width: 80%;\n-        height: 40px;\n-        border-radius: 5px;\n-        padding: 0 10px;\n-        background-color: #012B00;\n-        color: #FFFFFF;\n-        font-family: 'Poppins', sans-serif;\n-        font-size: 16px;\n-        font-weight: 600;\n-        outline: none;\n-        transition: all 0.3s ease;\n-      }\n-      button:hover {\n-        background-color: #F2F2F2;\n-        color: #16191B;\n-        cursor: pointer;\n-      }\n-      button:active {\n-        background-color: #04F000;\n-        color: #16191B;\n-        cursor: pointer;\n-        opacity: 0.5;\n-      }\n-      button:disabled {\n-        background-color: #F2F2F2;\n-        color: #16191B;\n-        cursor: not-allowed;\n-        opacity: 0.5;\n-      }\n-      button:focus {\n-        outline: none;\n-      }\n-      button:focus-visible {\n-        outline: 1px solid #F2F2F2;\n-      }\n-      .registerLink {\n-        color: #04F000;\n-        font-weight: 600;\n-      }\n-      .forgotPassword {\n-        margin-top: 10px;\n-        font-size: 12px;\n-        font-weight: 300;\n-      }\n-      .registerLink:hover {\n-        color: #04F000;\n-        text-decoration: underline;\n-      }\n-\n-    }\n-  }\n-}\n"
+                },
+                {
+                    "date": 1737251903805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,13 +197,13 @@\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n       }\n-      /* .forgotPassword {\n+      .forgotPassword {\n         margin-top: 10px;\n         font-size: 12px;\n         font-weight: 300;\n-      } */\n+      }\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737251927754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,8 +202,11 @@\n         margin-top: 10px;\n         font-size: 12px;\n         font-weight: 300;\n       }\n-\n+      .registerLink:hover {\n+        color: #04F000;\n+        text-decoration: underline;\n+      }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1737251947487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,8 +202,12 @@\n         margin-top: 10px;\n         font-size: 12px;\n         font-weight: 300;\n       }\n+      .registerLink {\n+        color: #04F000;\n+        font-weight: 600;\n+      }\n       .registerLink:hover {\n         color: #04F000;\n         text-decoration: underline;\n       }\n"
+                },
+                {
+                    "date": 1737251953776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,8 +205,9 @@\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n+        text-decoration: none;\n       }\n       .registerLink:hover {\n         color: #04F000;\n         text-decoration: underline;\n"
+                },
+                {
+                    "date": 1737251972254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,8 @@\n         font-weight: 600;\n         text-decoration: none;\n       }\n       .registerLink:hover {\n-        color: #04F000;\n         text-decoration: underline;\n       }\n     }\n   }\n"
+                },
+                {
+                    "date": 1737252092083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,8 +193,17 @@\n       }\n       button:focus-visible {\n         outline: 1px solid #F2F2F2;\n       }\n+      .registerButton {\n+        background-color: #012B00;\n+        color: #FFFFFF;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 16px;\n+        font-weight: 600;\n+        outline: none;\n+        transition: all 0.3s ease;\n+      }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n       }\n"
+                },
+                {
+                    "date": 1737252113517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,9 +194,9 @@\n       button:focus-visible {\n         outline: 1px solid #F2F2F2;\n       }\n       .registerButton {\n-        background-color: #012B00;\n+        background-color: #F2F2F2;\n         color: #FFFFFF;\n         font-family: 'Poppins', sans-serif;\n         font-size: 16px;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252135344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n         outline: 1px solid #F2F2F2;\n       }\n       .registerButton {\n         background-color: #F2F2F2;\n-        color: #FFFFFF;\n+        color: #012B00;\n         font-family: 'Poppins', sans-serif;\n         font-size: 16px;\n         font-weight: 600;\n         outline: none;\n"
+                },
+                {
+                    "date": 1737252180898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,8 +201,9 @@\n         font-size: 16px;\n         font-weight: 600;\n         outline: none;\n         transition: all 0.3s ease;\n+        margin-top: 10px;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252194332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,232 @@\n+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n+/* @tailwind base;\n+@tailwind components;\n+@tailwind utilities; */\n+\n+/* :root {\n+  --background: #ffffff;\n+  --foreground: #171717;\n+}\n+\n+@media (prefers-color-scheme: light) {\n+  :root {\n+    --background: #0a0a0a;\n+    --foreground: #ededed;\n+  }\n+} */\n+\n+body {\n+  padding: 0;\n+  margin: 0;\n+  font-family: Poppins, sans-serif;\n+  font-size: 16px;\n+  line-height: 1.5;\n+  font-weight: 400;\n+  letter-spacing: 0.01em;\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+\n+  .iconPageLeft {\n+    position: absolute;\n+    left: 0;\n+    bottom: 0;\n+    max-width: 400px;\n+    max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n+  }\n+  .iconPageRight {\n+    position: absolute;\n+    right: 0;\n+    bottom: 0;\n+    max-width: 400px;\n+    max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n+\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n+  }\n+\n+  .containerLogin {\n+    min-width: 650px;\n+    min-height: calc(100vh - 40px);\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: space-between;\n+    padding: 20px;\n+    align-items: center;\n+    background-color: #16191B;\n+\n+    .divTitle {\n+      margin-top: 40px;\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+\n+      h1 {\n+        margin: 0;\n+        color: #04F000;\n+        font-family: 'Aguafina Script', cursive;\n+        font-size: 4rem;\n+        font-weight: 400;\n+      }\n+      h3 {\n+        margin: 0;\n+        color: #F2F2F2;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 2rem;\n+        font-weight: 300;\n+      }\n+    }\n+    p {\n+      color: #F2F2F2;\n+    }\n+    footer {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+\n+      .assignDeveloper {\n+        margin: 0%;\n+        color: #F2F2F2;\n+        font-size: 10px;\n+        font-weight: 300;\n+      }\n+    }\n+\n+    @media (max-width: 900px) {\n+      max-width: 100vw;\n+    }\n+    .centerCard {\n+      display: flex;\n+      flex-direction: column;\n+      align-items: center;\n+      justify-content: center;\n+      gap: 10px;\n+      width: -webkit-fill-available;\n+\n+      input {\n+        width: 80%;\n+        height: 40px;\n+        border: 1px solid #F2F2F2;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+        background-color: #16191B;\n+        color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n+        outline: none;\n+        margin-bottom: 35px;\n+        transition: all 0.3s ease;\n+        &::placeholder {\n+          color: #F2F2F2;\n+          font-size: 16px;\n+          font-weight: 300;\n+        }\n+        &:focus {\n+          border-color: #04F000;\n+        }\n+      }\n+      label {\n+        color: #F2F2F2;\n+        font-size: 16px;\n+        font-weight: 300;\n+        display: flex;\n+        justify-content: flex-start;\n+        width: 80%;\n+      }\n+      button {\n+        width: 80%;\n+        height: 40px;\n+        border-radius: 5px;\n+        padding: 0 10px;\n+        background-color: #012B00;\n+        color: #FFFFFF;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 16px;\n+        font-weight: 600;\n+        outline: none;\n+        transition: all 0.3s ease;\n+      }\n+      button:hover {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+        cursor: pointer;\n+      }\n+      button:active {\n+        background-color: #04F000;\n+        color: #16191B;\n+        cursor: pointer;\n+        opacity: 0.5;\n+      }\n+      button:disabled {\n+        background-color: #F2F2F2;\n+        color: #16191B;\n+        cursor: not-allowed;\n+        opacity: 0.5;\n+      }\n+      button:focus {\n+        outline: none;\n+      }\n+      button:focus-visible {\n+        outline: 1px solid #F2F2F2;\n+      }\n+      .registerButton {\n+        background-color: #F2F2F2;\n+        color: #012B00;\n+        font-family: 'Poppins', sans-serif;\n+        font-size: 16px;\n+        font-weight: 600;\n+        outline: none;\n+        transition: all 0.3s ease;\n+        margin-top: 10px;\n+\n+      }\n+      .registerButton:hover {\n+        background-color: #04F000;\n+        color: #F2F2F2;\n+        cursor: pointer;\n+      }\n+      .registerLink {\n+        color: #04F000;\n+        font-weight: 600;\n+      }\n+      .forgotPassword {\n+        margin-top: 10px;\n+        font-size: 12px;\n+        font-weight: 300;\n+      }\n+      .registerLink {\n+        color: #04F000;\n+        font-weight: 600;\n+        text-decoration: none;\n+      }\n+      .registerLink:hover {\n+        text-decoration: underline;\n+      }\n+    }\n+  }\n+}\n"
+                },
+                {
+                    "date": 1737252247259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,9 +205,9 @@\n         margin-top: 10px;\n \n       }\n       .registerButton:hover {\n-        background-color: #04F000;\n+        background-color: #012B00;\n         color: #F2F2F2;\n         cursor: pointer;\n       }\n       .registerLink {\n@@ -229,230 +229,4 @@\n       }\n     }\n   }\n }\n-@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n-/* @tailwind base;\n-@tailwind components;\n-@tailwind utilities; */\n-\n-/* :root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n-}\n-\n-@media (prefers-color-scheme: light) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n-} */\n-\n-body {\n-  padding: 0;\n-  margin: 0;\n-  font-family: Poppins, sans-serif;\n-  font-size: 16px;\n-  line-height: 1.5;\n-  font-weight: 400;\n-  letter-spacing: 0.01em;\n-  display: flex;\n-  justify-content: center;\n-  align-items: center;\n-\n-  .iconPageLeft {\n-    position: absolute;\n-    left: 0;\n-    bottom: 0;\n-    max-width: 400px;\n-    max-height: 400px;\n-\n-    @media (max-width: 1263px) {\n-      max-width: 300px;\n-      max-height: 300px;\n-    }\n-    @media (max-width: 1080px) {\n-      max-width: 200px;\n-      max-height: 200px;\n-    }\n-    @media (max-width: 900px) {\n-      display: none;\n-    }\n-  }\n-  .iconPageRight {\n-    position: absolute;\n-    right: 0;\n-    bottom: 0;\n-    max-width: 400px;\n-    max-height: 400px;\n-\n-    @media (max-width: 1263px) {\n-      max-width: 300px;\n-      max-height: 300px;\n-    }\n-\n-    @media (max-width: 1080px) {\n-      max-width: 200px;\n-      max-height: 200px;\n-    }\n-    @media (max-width: 900px) {\n-      display: none;\n-    }\n-  }\n-\n-  .containerLogin {\n-    min-width: 650px;\n-    min-height: calc(100vh - 40px);\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: space-between;\n-    padding: 20px;\n-    align-items: center;\n-    background-color: #16191B;\n-\n-    .divTitle {\n-      margin-top: 40px;\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-\n-      h1 {\n-        margin: 0;\n-        color: #04F000;\n-        font-family: 'Aguafina Script', cursive;\n-        font-size: 4rem;\n-        font-weight: 400;\n-      }\n-      h3 {\n-        margin: 0;\n-        color: #F2F2F2;\n-        font-family: 'Poppins', sans-serif;\n-        font-size: 2rem;\n-        font-weight: 300;\n-      }\n-    }\n-    p {\n-      color: #F2F2F2;\n-    }\n-    footer {\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-\n-      .assignDeveloper {\n-        margin: 0%;\n-        color: #F2F2F2;\n-        font-size: 10px;\n-        font-weight: 300;\n-      }\n-    }\n-\n-    @media (max-width: 900px) {\n-      max-width: 100vw;\n-    }\n-    .centerCard {\n-      display: flex;\n-      flex-direction: column;\n-      align-items: center;\n-      justify-content: center;\n-      gap: 10px;\n-      width: -webkit-fill-available;\n-\n-      input {\n-        width: 80%;\n-        height: 40px;\n-        border: 1px solid #F2F2F2;\n-        border-radius: 5px;\n-        padding: 0 10px;\n-        background-color: #16191B;\n-        color: #F2F2F2;\n-        font-size: 16px;\n-        font-weight: 300;\n-        outline: none;\n-        margin-bottom: 35px;\n-        transition: all 0.3s ease;\n-        &::placeholder {\n-          color: #F2F2F2;\n-          font-size: 16px;\n-          font-weight: 300;\n-        }\n-        &:focus {\n-          border-color: #04F000;\n-        }\n-      }\n-      label {\n-        color: #F2F2F2;\n-        font-size: 16px;\n-        font-weight: 300;\n-        display: flex;\n-        justify-content: flex-start;\n-        width: 80%;\n-      }\n-      button {\n-        width: 80%;\n-        height: 40px;\n-        border-radius: 5px;\n-        padding: 0 10px;\n-        background-color: #012B00;\n-        color: #FFFFFF;\n-        font-family: 'Poppins', sans-serif;\n-        font-size: 16px;\n-        font-weight: 600;\n-        outline: none;\n-        transition: all 0.3s ease;\n-      }\n-      button:hover {\n-        background-color: #F2F2F2;\n-        color: #16191B;\n-        cursor: pointer;\n-      }\n-      button:active {\n-        background-color: #04F000;\n-        color: #16191B;\n-        cursor: pointer;\n-        opacity: 0.5;\n-      }\n-      button:disabled {\n-        background-color: #F2F2F2;\n-        color: #16191B;\n-        cursor: not-allowed;\n-        opacity: 0.5;\n-      }\n-      button:focus {\n-        outline: none;\n-      }\n-      button:focus-visible {\n-        outline: 1px solid #F2F2F2;\n-      }\n-      .registerButton {\n-        background-color: #F2F2F2;\n-        color: #012B00;\n-        font-family: 'Poppins', sans-serif;\n-        font-size: 16px;\n-        font-weight: 600;\n-        outline: none;\n-        transition: all 0.3s ease;\n-        margin-top: 10px;\n-      }\n-      .registerLink {\n-        color: #04F000;\n-        font-weight: 600;\n-      }\n-      .forgotPassword {\n-        margin-top: 10px;\n-        font-size: 12px;\n-        font-weight: 300;\n-      }\n-      .registerLink {\n-        color: #04F000;\n-        font-weight: 600;\n-        text-decoration: none;\n-      }\n-      .registerLink:hover {\n-        text-decoration: underline;\n-      }\n-    }\n-  }\n-}\n"
+                },
+                {
+                    "date": 1737252322546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,8 +206,9 @@\n \n       }\n       .registerButton:hover {\n         background-color: #012B00;\n+        text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n       }\n       .registerLink {\n"
+                },
+                {
+                    "date": 1737252361069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,8 +209,10 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n+        opacity: 0.5;\n+        transition: all 0.3s ease;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252374887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        opacity: 0.5;\n+        opacity: 0.1;\n         transition: all 0.3s ease;\n       }\n       .registerLink {\n         color: #04F000;\n"
+                },
+                {
+                    "date": 1737252380733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        opacity: 0.1;\n+        opacity: 0.10;\n         transition: all 0.3s ease;\n       }\n       .registerLink {\n         color: #04F000;\n"
+                },
+                {
+                    "date": 1737252386212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,8 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        opacity: 0.10;\n         transition: all 0.3s ease;\n       }\n       .registerLink {\n         color: #04F000;\n"
+                },
+                {
+                    "date": 1737252394569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        transition: all 0.3s ease;\n+        transition: all 0.9s ease;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252401117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        transition: all 0.9s ease;\n+        transition: all 0.5s ease;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252407661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        transition: all 0.5s ease;\n+        transition: all 0.5s ease-in-out;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252413939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n         background-color: #012B00;\n         text-decoration: underline;\n         color: #F2F2F2;\n         cursor: pointer;\n-        transition: all 0.5s ease-in-out;\n+        transition: all 0.4s ease-in-out;\n       }\n       .registerLink {\n         color: #04F000;\n         font-weight: 600;\n"
+                },
+                {
+                    "date": 1737252519438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     bottom: 0;\n     max-width: 400px;\n     max-height: 400px;\n \n-    @media (max-width: 1263px) {\n+    @media (max-width: 1480px) {\n       max-width: 300px;\n       max-height: 300px;\n     }\n     @media (max-width: 1080px) {\n"
+                },
+                {
+                    "date": 1737252556843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n   display: flex;\n   justify-content: center;\n   align-items: center;\n \n-  .iconPageLeft {\n+  .iconPageLeft, .iconPageRight {\n     position: absolute;\n     left: 0;\n     bottom: 0;\n     max-width: 400px;\n@@ -46,29 +46,9 @@\n     @media (max-width: 900px) {\n       display: none;\n     }\n   }\n-  .iconPageRight {\n-    position: absolute;\n-    right: 0;\n-    bottom: 0;\n-    max-width: 400px;\n-    max-height: 400px;\n-\n-    @media (max-width: 1263px) {\n-      max-width: 300px;\n-      max-height: 300px;\n-    }\n-\n-    @media (max-width: 1080px) {\n-      max-width: 200px;\n-      max-height: 200px;\n-    }\n-    @media (max-width: 900px) {\n-      display: none;\n-    }\n-  }\n-\n+  \n   .containerLogin {\n     min-width: 650px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n"
+                },
+                {
+                    "date": 1737252574609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n   display: flex;\n   justify-content: center;\n   align-items: center;\n \n-  .iconPageLeft, .iconPageRight {\n+  .iconPageLeft {\n     position: absolute;\n     left: 0;\n     bottom: 0;\n     max-width: 400px;\n@@ -46,9 +46,29 @@\n     @media (max-width: 900px) {\n       display: none;\n     }\n   }\n-  \n+  .iconPageRight {\n+    position: absolute;\n+    right: 0;\n+    bottom: 0;\n+    max-width: 400px;\n+    max-height: 400px;\n+\n+    @media (max-width: 1263px) {\n+      max-width: 300px;\n+      max-height: 300px;\n+    }\n+\n+    @media (max-width: 1080px) {\n+      max-width: 200px;\n+      max-height: 200px;\n+    }\n+    @media (max-width: 900px) {\n+      display: none;\n+    }\n+  }\n+\n   .containerLogin {\n     min-width: 650px;\n     min-height: calc(100vh - 40px);\n     display: flex;\n"
+                },
+                {
+                    "date": 1737252586906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     bottom: 0;\n     max-width: 400px;\n     max-height: 400px;\n \n-    @media (max-width: 1263px) {\n+    @media (max-width: 1480px) {\n       max-width: 300px;\n       max-height: 300px;\n     }\n \n"
+                },
+                {
+                    "date": 1737252620222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     @media (max-width: 1480px) {\n       max-width: 300px;\n       max-height: 300px;\n     }\n-    @media (max-width: 1080px) {\n+    @media (max-width: 1280px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n     @media (max-width: 900px) {\n"
+                },
+                {
+                    "date": 1737252631461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n       max-width: 300px;\n       max-height: 300px;\n     }\n \n-    @media (max-width: 1080px) {\n+    @media (max-width: 1280px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n     @media (max-width: 900px) {\n"
+                },
+                {
+                    "date": 1737252693604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,11 @@\n         font-size: 10px;\n         font-weight: 300;\n       }\n     }\n-\n+    @media (max-width: 1080px) {\n+      min-width: 550px;\n+    }\n     @media (max-width: 900px) {\n       max-width: 100vw;\n     }\n     .centerCard {\n"
+                },
+                {
+                    "date": 1737252716776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,14 @@\n     padding: 20px;\n     align-items: center;\n     background-color: #16191B;\n \n+    @media (max-width: 1080px) {\n+      min-width: 550px;\n+    }\n+    @media (max-width: 900px) {\n+      max-width: 100vw;\n+    }\n     .divTitle {\n       margin-top: 40px;\n       display: flex;\n       flex-direction: column;\n@@ -115,14 +121,9 @@\n         font-size: 10px;\n         font-weight: 300;\n       }\n     }\n-    @media (max-width: 1080px) {\n-      min-width: 550px;\n-    }\n-    @media (max-width: 900px) {\n-      max-width: 100vw;\n-    }\n+    \n     .centerCard {\n       display: flex;\n       flex-direction: column;\n       align-items: center;\n"
+                },
+                {
+                    "date": 1737252748491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,11 @@\n \n     @media (max-width: 1080px) {\n       min-width: 550px;\n     }\n+    @media (max-width: 980px) {\n+      min-width: 500px;\n+    }\n     @media (max-width: 900px) {\n       max-width: 100vw;\n     }\n     .divTitle {\n"
+                },
+                {
+                    "date": 1737252765850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     }\n     @media (max-width: 980px) {\n       min-width: 500px;\n     }\n-    @media (max-width: 900px) {\n+    @media (max-width: 930px) {\n       max-width: 100vw;\n     }\n     .divTitle {\n       margin-top: 40px;\n"
+                },
+                {
+                    "date": 1737252794875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     @media (max-width: 980px) {\n       min-width: 500px;\n     }\n     @media (max-width: 930px) {\n-      max-width: 100vw;\n+      min-width: 100vw;\n     }\n     .divTitle {\n       margin-top: 40px;\n       display: flex;\n"
+                },
+                {
+                    "date": 1737252814466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     @media (max-width: 1280px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n-    @media (max-width: 900px) {\n+    @media (max-width: 930px) {\n       display: none;\n     }\n   }\n   .iconPageRight {\n@@ -62,9 +62,9 @@\n     @media (max-width: 1280px) {\n       max-width: 200px;\n       max-height: 200px;\n     }\n-    @media (max-width: 900px) {\n+    @media (max-width: 930px) {\n       display: none;\n     }\n   }\n \n"
+                },
+                {
+                    "date": 1737252837314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     @media (max-width: 980px) {\n       min-width: 500px;\n     }\n     @media (max-width: 930px) {\n-      min-width: 100vw;\n+      width: 100vw;\n     }\n     .divTitle {\n       margin-top: 40px;\n       display: flex;\n"
+                },
+                {
+                    "date": 1737252859652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,9 @@\n       min-width: 500px;\n     }\n     @media (max-width: 930px) {\n       width: 100vw;\n+      overflow: hidden;\n     }\n     .divTitle {\n       margin-top: 40px;\n       display: flex;\n"
+                },
+                {
+                    "date": 1737252878954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     @media (max-width: 980px) {\n       min-width: 500px;\n     }\n     @media (max-width: 930px) {\n-      width: 100vw;\n+      width: calc(100vw - 40px);\n       overflow: hidden;\n     }\n     .divTitle {\n       margin-top: 40px;\n"
+                },
+                {
+                    "date": 1737253346487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,14 @@\n         font-family: 'Poppins', sans-serif;\n         font-size: 2rem;\n         font-weight: 300;\n       }\n+      p {\n+        color: #F2F2F2;\n+        font-size: 12px;\n+        font-weight: 300;\n+        margin: 0;\n+      }\n     }\n     p {\n       color: #F2F2F2;\n     }\n"
+                }
+            ],
+            "date": 1737235621109,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #0a0a0a;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  color: var(--foreground);\n  background: var(--background);\n  font-family: Poppins, sans-serif;\n}\n"
+        }
+    ]
+}

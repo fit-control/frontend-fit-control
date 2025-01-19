@@ -1,0 +1,22 @@
+{
+    "sourceFile": "next.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1737240466144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737240768352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n-module.exports = {\n-  webpack(config) {\n-    config.module.rules.push({\n-      test: /\\.svg$/,\n-      use: [\"@svgr/webpack\"],\n-    });\n-    return config;\n-  },\n+import type { NextConfig } from \"next\";\n+\n+const nextConfig: NextConfig = {\n+  /* config options here */\n };\n+\n+export default nextConfig;\n"
+                }
+            ],
+            "date": 1737240466144,
+            "name": "Commit-0",
+            "content": "module.exports = {\n  webpack(config) {\n    config.module.rules.push({\n      test: /\\.svg$/,\n      use: [\"@svgr/webpack\"],\n    });\n    return config;\n  },\n};\n"
+        }
+    ]
+}
