@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/App.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1742599435563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742601022615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import './App.css'\n-import Home from './pages/Home'\n+import Home from './pages/Home/Home'\n \n function App() {\n \n   return (\n"
+                },
+                {
+                    "date": 1742602700465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n \n function App() {\n \n   return (\n-    <>\n+    <body>\n       <Home/>\n-    </>\n+    </body>\n   )\n }\n \n export default App\n"
+                },
+                {
+                    "date": 1742603430487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n import './App.css'\n-import Home from './pages/Home/Home'\n+import Home from './pages/Home'\n \n function App() {\n \n   return (\n-    <body>\n+    <>\n       <Home/>\n-    </body>\n+    </>\n   )\n }\n \n export default App\n"
+                },
+                {
+                    "date": 1742603450737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import './App.css'\n-import Home from './pages/Home'\n+import Home from './pages/Home/Home'\n \n function App() {\n \n   return (\n"
+                },
+                {
+                    "date": 1742603518452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import './App.css'\n-import Home from './pages/Home/Home'\n+import {} from './pages/Home/Home'\n \n function App() {\n \n   return (\n"
+                },
+                {
+                    "date": 1742603576339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import './App.css'\n-import {} from './pages/Home/Home'\n+import Home from './pages/Home/Home'\n \n function App() {\n \n   return (\n"
+                },
+                {
+                    "date": 1742603600032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import './App.css'\n+import Home from './pages/Home/Home'\n+\n+function App() {\n+\n+  return (\n+    <>\n+      <Home/>\n+    </>\n+  )\n+}\n+\n+export default App\n"
+                },
+                {
+                    "date": 1742610204912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,28 @@\n import './App.css'\n-import Home from './pages/Home/Home'\n+import Home from './pages/Home'\n+import About from './pages/About';\n+import NotFound from './pages/NotFound';\n+import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n+import AuthRoutes from './components/AuthRoutes';\n+import PaginaTeste from './pages/PaginaTeste';\n \n function App() {\n \n   return (\n-    <>\n-      <Home/>\n-    </>\n-  )\n+    <Router>\n+      <div>\n+      <Routes>\n+          <Route path=\"/\" element={<Home />} />\n+            {/* Rota protegida com AuthRoutes */}\n+          <Route element={<AuthRoutes />}>\n+            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n+          </Route>\n+          <Route path=\"/about\" element={<About />} />\n+          <Route path=\"*\" element={<NotFound />} />\n+        </Routes>\n+      </div>\n+    </Router>\n+  );\n }\n \n export default App\n-import './App.css'\n-import Home from './pages/Home/Home'\n-\n-function App() {\n-\n-  return (\n-    <>\n-      <Home/>\n-    </>\n-  )\n-}\n-\n-export default App\n"
+                },
+                {
+                    "date": 1742610214994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+import './App.css'\n+import Home from './pages/Home'\n+import About from './pages/About';\n+import NotFound from './pages/NotFound';\n+import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n+import AuthRoutes from './components/AuthRoutes';\n+import PaginaTeste from './pages/PaginaTeste';\n+\n+function App() {\n+\n+  return (\n+    <Router>\n+      <div>\n+      <Routes>\n+          <Route path=\"/\" element={<Home />} />\n+          <Route element={<AuthRoutes />}>\n+            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n+          </Route>\n+          <Route path=\"/about\" element={<About />} />\n+          <Route path=\"*\" element={<NotFound />} />\n+        </Routes>\n+      </div>\n+    </Router>\n+  );\n+}\n+\n+export default App\n"
+                },
+                {
+                    "date": 1742612346313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+import './App.css'\n+import Home from './pages/Home'\n+import About from './pages/About';\n+import NotFound from './pages/NotFound';\n+import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n+import AuthRoutes from './components/AuthRoutes';\n+import PaginaTeste from './pages/PaginaTeste';\n+\n+function App() {\n+\n+  return (\n+    <Router>\n+      <div>\n+      <Routes>\n+        <Route index element={<Home />} />\n+          <Route element={<AuthRoutes />}>\n+            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n+            {/* <Route path=\"dashboard\" element={<Dashboard />}>\n+              <Route index element={<ElementIndexDashboard />} />\n+              <Route path=\"predictions\">\n+                <Route index element={<Predictions />} />\n+                <Route path=\":id\" element={<PredictionById />} />\n+              </Route>\n+              <Route path=\"products\" element={<ProductsPage />} />\n+              <Route path=\"product/:id\" element={<GetById />} />\n+              <Route path=\"client/:id\" element={<GetById />} />\n+          </Route> */}\n+          </Route>\n+          <Route path=\"/about\" element={<About />} />\n+        <Route path=\"*\" element={<NotFound />} />\n+      </Routes>\n+      </div>\n+    </Router>\n+  );\n+}\n+\n+export default App\n"
+                },
+                {
+                    "date": 1742612456428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+import './App.css'\n+import Home from './pages/Home'\n+import About from './pages/About';\n+import NotFound from './pages/NotFound';\n+import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n+import AuthRoutes from './components/AuthRoutes';\n+import PaginaTeste from './pages/PaginaTeste';\n+\n+function App() {\n+\n+  return (\n+    <Router>\n+      <div>\n+      <Routes>\n+        <Route index element={<Home />} />\n+          <Route element={<AuthRoutes />}>\n+            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n+          </Route>\n+          <Route path=\"/about\" element={<About />} />\n+        <Route path=\"*\" element={<NotFound />} />\n+      </Routes>\n+      </div>\n+    </Router>\n+  );\n+}\n+\n+export default App\n"
+                },
+                {
+                    "date": 1742665279241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     <Router>\n       <div>\n       <Routes>\n         <Route index element={<Home />} />\n+        <Route path=\"/cadastro\" element={<Home />}/>\n           <Route element={<AuthRoutes />}>\n             <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n           </Route>\n           <Route path=\"/about\" element={<About />} />\n@@ -24,96 +25,4 @@\n   );\n }\n \n export default App\n-import './App.css'\n-import Home from './pages/Home'\n-import About from './pages/About';\n-import NotFound from './pages/NotFound';\n-import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n-import AuthRoutes from './components/AuthRoutes';\n-import PaginaTeste from './pages/PaginaTeste';\n-\n-function App() {\n-\n-  return (\n-    <Router>\n-      <div>\n-      <Routes>\n-        <Route index element={<Home />} />\n-          <Route element={<AuthRoutes />}>\n-            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n-            {/* <Route path=\"dashboard\" element={<Dashboard />}>\n-              <Route index element={<ElementIndexDashboard />} />\n-              <Route path=\"predictions\">\n-                <Route index element={<Predictions />} />\n-                <Route path=\":id\" element={<PredictionById />} />\n-              </Route>\n-              <Route path=\"products\" element={<ProductsPage />} />\n-              <Route path=\"product/:id\" element={<GetById />} />\n-              <Route path=\"client/:id\" element={<GetById />} />\n-          </Route> */}\n-          </Route>\n-          <Route path=\"/about\" element={<About />} />\n-        <Route path=\"*\" element={<NotFound />} />\n-      </Routes>\n-      </div>\n-    </Router>\n-  );\n-}\n-\n-export default App\n-import './App.css'\n-import Home from './pages/Home'\n-import About from './pages/About';\n-import NotFound from './pages/NotFound';\n-import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n-import AuthRoutes from './components/AuthRoutes';\n-import PaginaTeste from './pages/PaginaTeste';\n-\n-function App() {\n-\n-  return (\n-    <Router>\n-      <div>\n-      <Routes>\n-          <Route path=\"/\" element={<Home />} />\n-          <Route element={<AuthRoutes />}>\n-            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n-          </Route>\n-          <Route path=\"/about\" element={<About />} />\n-          <Route path=\"*\" element={<NotFound />} />\n-        </Routes>\n-      </div>\n-    </Router>\n-  );\n-}\n-\n-export default App\n-import './App.css'\n-import Home from './pages/Home'\n-import About from './pages/About';\n-import NotFound from './pages/NotFound';\n-import { BrowserRouter as Router, Route, Routes } from \"react-router-dom\";\n-import AuthRoutes from './components/AuthRoutes';\n-import PaginaTeste from './pages/PaginaTeste';\n-\n-function App() {\n-\n-  return (\n-    <Router>\n-      <div>\n-      <Routes>\n-          <Route path=\"/\" element={<Home />} />\n-            {/* Rota protegida com AuthRoutes */}\n-          <Route element={<AuthRoutes />}>\n-            <Route path=\"/pagina-teste\" element={<PaginaTeste />}/>\n-          </Route>\n-          <Route path=\"/about\" element={<About />} />\n-          <Route path=\"*\" element={<NotFound />} />\n-        </Routes>\n-      </div>\n-    </Router>\n-  );\n-}\n-\n-export default App\n"
+                }
+            ],
+            "date": 1742599435563,
+            "name": "Commit-0",
+            "content": "import './App.css'\nimport Home from './pages/Home'\n\nfunction App() {\n\n  return (\n    <>\n      <Home/>\n    </>\n  )\n}\n\nexport default App\n"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/pages/Home/Home.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1742601022592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742601342128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n+    <body className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n       <ContainerCenterLogin />\r\n     </body>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742601357373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <body className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n+    <div className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n       <ContainerCenterLogin />\r\n-    </body>\r\n+    </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742601385484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n+    <body className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n       <ContainerCenterLogin />\r\n-    </div>\r\n+    </body>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742601411739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <body className=\"items-center justify-center min-h-screen flex fundo_login bg-gradient-to-t from-green-900/80 to-black/70\">\r\n+    <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </body>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742601455148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n+import \"./Home.css\"\r\n \r\n export default function Home() {\r\n   return (\r\n     <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n"
+                },
+                {
+                    "date": 1742601519568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n-import \"./Home.css\"\r\n+import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n     <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n"
+                },
+                {
+                    "date": 1742601827835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n+    <body className=\"items-center justify-items-center min-h-screen flex\">\r\n       <ContainerCenterLogin />\r\n     </body>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742601946518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <body className=\"items-center justify-items-center min-h-screen flex\">\r\n+    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n-    </body>\r\n+    </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742602001565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n+    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\" id=\"fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742602019169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\" id=\"fundo_login\">\r\n+    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\" id=\"fundoLogin\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742602081911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\" id=\"fundoLogin\">\r\n+    <div className=\"items-center justify-items-center min-h-screen min=w-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742602092969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import './Home.css'\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen min=w-screen flex fundo_login\">\r\n+    <div className=\"items-center justify-items-center min=w-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742603551188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n import './Home.css'\r\n \r\n-export default function Home() {\r\n+function Home() {\r\n   return (\r\n     <div className=\"items-center justify-items-center min=w-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n+export default Home;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742603564397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n+import ContainerCenterLogin from '../../components/containerCenterLogin';\r\n import './Home.css'\r\n \r\n function Home() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1742603616096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import ContainerCenterLogin from '../../components/containerCenterLogin';\r\n+\r\n+function Home() {\r\n+  return (\r\n+    <div className=\"items-center justify-items-center min=w-screen flex fundo_login\">\r\n+      <ContainerCenterLogin />\r\n+    </div>\r\n+  );\r\n+}\r\n+export default Home;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742604349095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import ContainerCenterLogin from '../../components/containerCenterLogin';\r\n+\r\n+function Home() {\r\n+  return (\r\n+    <div className=\"items-center justify-items-center min=w-screen flex fundo_login\" style={{\r\n+      width: '100vw',\r\n+      background: 'linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9))'\r\n+    }}>\r\n+      <ContainerCenterLogin />\r\n+    </div>\r\n+  );\r\n+}\r\n+export default Home;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742601022592,
+            "name": "Commit-0",
+            "content": "import ContainerCenterLogin from \"../../components/containerCenterLogin\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n      <ContainerCenterLogin />\r\n    </body>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

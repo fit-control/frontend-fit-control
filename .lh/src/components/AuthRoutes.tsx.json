@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/components/AuthRoutes.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1742608906547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742610089032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n+import { Navigate, Outlet } from \"react-router-dom\"\r\n+import { useAuth } from \"../context/auth\"\r\n+\r\n const AuthRoutes = () => {\r\n+    const {token} = useAuth()\r\n+\r\n   return (\r\n-    <div>AuthRoutes</div>\r\n+    <div>{token ? <Outlet /> : <Navigate to=\"/\" /> }</div>\r\n   )\r\n }\r\n \r\n export default AuthRoutes\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742611032232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { Navigate, Outlet } from \"react-router-dom\"\r\n import { useAuth } from \"../context/auth\"\r\n \r\n const AuthRoutes = () => {\r\n-    const {token} = useAuth()\r\n+    const {isAutenticatad} = useAuth()\r\n \r\n   return (\r\n-    <div>{token ? <Outlet /> : <Navigate to=\"/\" /> }</div>\r\n+    <div>{isAutenticatad ? <Outlet /> : <Navigate to=\"/\" /> }</div>\r\n   )\r\n }\r\n \r\n export default AuthRoutes\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742611184894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import { Navigate, Outlet } from \"react-router-dom\"\r\n import { useAuth } from \"../context/auth\"\r\n \r\n const AuthRoutes = () => {\r\n+  console.log(\"EUTROU AQUI\")\r\n     const {isAutenticatad} = useAuth()\r\n \r\n+    console.log(\"autenticado?\", isAutenticatad)\r\n   return (\r\n     <div>{isAutenticatad ? <Outlet /> : <Navigate to=\"/\" /> }</div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1742612082849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,17 @@\n import { useAuth } from \"../context/auth\"\r\n \r\n const AuthRoutes = () => {\r\n   console.log(\"EUTROU AQUI\")\r\n-    const {isAutenticatad} = useAuth()\r\n+    const {isAuthenticated} = useAuth()\r\n \r\n-    console.log(\"autenticado?\", isAutenticatad)\r\n-  return (\r\n-    <div>{isAutenticatad ? <Outlet /> : <Navigate to=\"/\" /> }</div>\r\n-  )\r\n+    console.log(\"autenticado?\", isAuthenticated)\r\n+    if (!isAuthenticated) {\r\n+      // Redireciona para a página de login caso o usuário não esteja autenticado\r\n+      return <Navigate to=\"/login\" />;\r\n+    }\r\n+  \r\n+    // Renderiza as rotas filhas se o usuário estiver autenticado\r\n+    return <Outlet />;\r\n }\r\n \r\n export default AuthRoutes\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742612100949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,9 @@\n   console.log(\"EUTROU AQUI\")\r\n     const {isAuthenticated} = useAuth()\r\n \r\n     console.log(\"autenticado?\", isAuthenticated)\r\n-    if (!isAuthenticated) {\r\n-      // Redireciona para a página de login caso o usuário não esteja autenticado\r\n-      return <Navigate to=\"/login\" />;\r\n-    }\r\n-  \r\n+    if (!isAuthenticated) return <Navigate to=\"/login\" />;\r\n     // Renderiza as rotas filhas se o usuário estiver autenticado\r\n     return <Outlet />;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742612408135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n   console.log(\"EUTROU AQUI\")\r\n     const {isAuthenticated} = useAuth()\r\n \r\n     console.log(\"autenticado?\", isAuthenticated)\r\n-    if (!isAuthenticated) return <Navigate to=\"/login\" />;\r\n     // Renderiza as rotas filhas se o usuário estiver autenticado\r\n-    return <Outlet />;\r\n+    return isAuthenticated ? <Outlet /> : <Navigate to=\"/\" />;\r\n }\r\n \r\n export default AuthRoutes\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742613238979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,9 @@\n import { Navigate, Outlet } from \"react-router-dom\"\r\n import { useAuth } from \"../context/auth\"\r\n \r\n const AuthRoutes = () => {\r\n-  console.log(\"EUTROU AQUI\")\r\n     const {isAuthenticated} = useAuth()\r\n-\r\n-    console.log(\"autenticado?\", isAuthenticated)\r\n     // Renderiza as rotas filhas se o usuário estiver autenticado\r\n     return isAuthenticated ? <Outlet /> : <Navigate to=\"/\" />;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742613548638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n \r\n const AuthRoutes = () => {\r\n     const {isAuthenticated} = useAuth()\r\n     // Renderiza as rotas filhas se o usuário estiver autenticado\r\n-    return isAuthenticated ? <Outlet /> : <Navigate to=\"/\" />;\r\n+    return isAuthenticated || !!localStorage.getItem(\"token\") ? <Outlet /> : <Navigate to=\"/\" />;\r\n }\r\n \r\n export default AuthRoutes\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742608906547,
+            "name": "Commit-0",
+            "content": "const AuthRoutes = () => {\r\n  return (\r\n    <div>AuthRoutes</div>\r\n  )\r\n}\r\n\r\nexport default AuthRoutes"
+        }
+    ]
+}

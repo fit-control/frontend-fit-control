@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/pages/Home.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1742599414874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742600000296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen flex\">\r\n+    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742600832539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ContainerCenterLogin from \"../components/containerCenterLogin\";\r\n \r\n export default function Home() {\r\n   return (\r\n-    <div className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n+    <body className=\"items-center justify-items-center min-h-screen flex fundo_login\">\r\n       <ContainerCenterLogin />\r\n-    </div>\r\n+    </body>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1742611085683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import ContainerCenterLogin from '../../components/containerCenterLogin';\r\n+import ContainerCenterLogin from \"../components/containerCenterLogin\";\r\n \r\n function Home() {\r\n   return (\r\n     <div className=\"items-center justify-items-center min=w-screen flex fundo_login\" style={{\r\n"
+                }
+            ],
+            "date": 1742599414874,
+            "name": "Commit-0",
+            "content": "import ContainerCenterLogin from \"../components/containerCenterLogin\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <div className=\"items-center justify-items-center min-h-screen flex\">\r\n      <ContainerCenterLogin />\r\n    </div>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/pages/Home/Home.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1742601488603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742601574724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body {\r\n     background: linear-gradient(360deg, rgba(0, 77, 0, 0.8), rgba(0, 0, 0, 0.7));\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1742601737271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+body {\r\n+    background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742601934734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-body {\r\n+.fundo_login {\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n }\r\n"
+                },
+                {
+                    "date": 1742602006900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-.fundo_login {\r\n+#fundo_login {\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n }\r\n"
+                },
+                {
+                    "date": 1742602023885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-#fundo_login {\r\n+#fundoLogin {\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n }\r\n"
+                },
+                {
+                    "date": 1742602100207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-#fundoLogin {\r\n+.fundoLogin {\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n }\r\n"
+                },
+                {
+                    "date": 1742602135093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n .fundoLogin {\r\n-    background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));;\r\n+    background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));\r\n+    z-index: 10000;\r\n }\r\n"
+                },
+                {
+                    "date": 1742602143503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .fundoLogin {\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));\r\n-    z-index: 990000;\r\n+    z-index: 9999;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603038308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n .fundoLogin {\r\n+    width: 100vw;\r\n     background: linear-gradient(343deg, rgba(22, 77, 0, 0.9), rgba(0, 25, 0, 10.9));\r\n     z-index: 9999;\r\n }\r\n"
+                }
+            ],
+            "date": 1742601488603,
+            "name": "Commit-0",
+            "content": "body {\r\n    background: linear-gradient(360deg, rgba(0, 77, 0, 0.8), rgba(0, 0, 0, 0.7));\r\n}"
+        }
+    ]
+}
