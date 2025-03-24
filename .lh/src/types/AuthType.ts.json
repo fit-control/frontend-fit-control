@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1742656346047,
@@ -28,6 +28,18 @@
                 {
                     "date": 1742666730442,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\r\n export interface User {\r\n     id: number\r\n     nomeCompleto: string\r\n-    emaild: string\r\n-    passwordd: string\r\n+    email: string\r\n+    password: string\r\n     telefone: string\r\n     genero: string\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742762318823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\r\n export interface User {\r\n     id: number\r\n     nomeCompleto: string\r\n-    email: string\r\n+    emailCadastro: string\r\n     password: string\r\n     telefone: string\r\n     genero: string\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742762586210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\r\n export interface User {\r\n     id: number\r\n     nomeCompleto: string\r\n-    emailCadastro: string\r\n+    email: string\r\n     password: string\r\n     telefone: string\r\n     genero: string\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742763101945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n     email: string\r\n     password: string\r\n }\r\n export interface User {\r\n-    id: number\r\n     nomeCompleto: string\r\n     email: string\r\n     password: string\r\n     telefone: string\r\n"
                 }
             ],
             "date": 1742656346047,

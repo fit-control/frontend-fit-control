@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
+    "formik": "^2.4.6",
     "frontend-fit-control": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
